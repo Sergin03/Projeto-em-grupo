@@ -1,0 +1,700 @@
+/* Essa parte se refere a página inicial "home"*/
+
+*{
+    margin: 0;
+    padding:0;
+}
+ 
+body{
+    font-family: 'Righteous', serif;
+    background-color:rgb(182, 104, 14);
+}
+
+#logo{
+    width: 150px; 
+}
+
+header{
+    background-color: #fb6262;
+    box-shadow: 0px 3px 10px lightcoral;
+    margin-right: 0;
+    display: inline-block;
+}
+
+.cabeçalho{
+    display: flex;
+    align-items:stretch;
+}
+
+#navbar {
+    display: flex;
+    list-style: none;
+    margin-left: 32px;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff1d0;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: 0 25px;
+}
+
+#quemsomos-home {
+    text-align: center;
+    margin: 50px;
+    margin-top: 100px;
+    font-size: 24px;
+    text-align: justify;
+    color: #000;
+}
+
+#historia{
+    margin-top: 100px;
+	text-align: center;
+	font-size: 3.2em;
+	color: #fb6262;
+	text-shadow: 1px 1px 1px #000;
+    margin-bottom: 100px;
+}
+
+.conteiner{
+
+display:inline-block;
+align-items:center;
+justify-content: center;
+flex-direction:column;
+}  
+
+
+.card {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 360px;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, rgb(233, 144, 144));
+    transition: all .5s;
+}
+
+.card:hover {
+    background-image: linear-gradient(#25995f,  rgb(251, 98, 98));
+}
+
+.card .img1 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('/img/aulas2.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img1 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img1 {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img1 span {
+    font-size: 28px;
+    color:  rgb(251, 98, 98);
+}
+
+.card .img2 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('/img/aulas.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img2 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img2 {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img2 span {
+    font-size: 28px;
+    color:  rgb(251, 98, 98);
+}
+
+.card .img3 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('/img/aulas3.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img3 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img3 {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img3 span {
+    font-size: 28px;
+    color:  rgb(251, 98, 98);
+    }
+
+    .card .img3 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('/img/aulas3.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img3 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img3 {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img3 span {
+    font-size: 28px;
+    color:  rgb(251, 98, 98);
+    }
+
+.card .img4 {
+        width: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        background-image: url('/img/aulas5.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: all .5s;
+        z-index: 2;
+        position: relative;
+        opacity: .8;
+    }
+    
+.card .img4 span {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 100;
+        font-style: italic;
+        transition: all .5s;
+    }
+    
+.card:hover .img4 {
+        width: 430px;
+        opacity: 1;
+}
+    
+.card:hover .img4 span {
+        font-size: 28px;
+        color:  rgb(251, 98, 98);
+}
+
+.card .img5 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('/img/aulas4.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img5 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img5 {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img5 span {
+    font-size: 28px;
+    color:  rgb(251, 98, 98);
+}
+
+.card .img6 {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('/img/aulas6.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img6 span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img6 {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img6 span {
+    font-size: 28px;
+    color:  rgb(251, 98, 98);
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+.card:hover .content {
+    height: 150px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
+
+.rodape{
+    display: inline;
+}
+
+#navinfo {
+    display: flex;
+    list-style: none;
+    margin-left: 32px;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #fb6262;
+    margin: 0;
+    padding-top: 20px;
+    color:#fff1d0;}
+
+    /* Essa parte se refere a página de "contate-nos"*/
+body {
+    background-color: #4c8484;
+}
+
+#contato {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#formulario {
+    margin: auto;
+}
+
+form {
+  margin: 100px;
+  width: 800px;
+  padding: 2em;
+  border: 2px solid #CCC;
+  border-radius: 2em;
+  background-color: #f5a37f;
+}
+
+form div + div {
+  margin-top: 2em;
+}
+
+label {
+  display: inline-block;
+  width: 180px;
+  text-align: right;
+}
+
+input, textarea {
+  font: 2em sans-serif;
+  width: 600px;
+  box-sizing: border-box;
+  border: 2px solid #fff1d0;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 10em;
+}
+
+.button {
+  padding-left: 180px;
+  margin-left: .10em;
+}
+
+
+/* Essa parte se refere a "equipe*/
+
+#equipe{
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    color: blanchedalmond;
+    border-color: #25995f;
+    display: inline-block;
+}
+
+#pessoa1 {
+    background-image: url(/img/angela.jpeg);
+    background-size: 250px 350px;
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    border: 5px solid #fb6262;
+    border-radius: 5px;
+}
+#pessoa2 {
+    background-image: url(/img/leila.jpeg);
+    background-size: 250px 250px;
+    float:left;
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    border: 5px solid #fb6262;
+    border-radius: 5px;
+}
+
+#pessoa3 {
+    background-image: url(/img/sergio.jpeg);
+    background-size: 250px 250px;
+    float:left;
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    border: 5px solid #fb6262;
+    border-radius: 5px;
+}
+#pessoa4 {
+    background-image: url(/img/caio.jpg);
+    background-size: cover;
+    float:left;
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    border: 5px solid #fb6262;
+    border-radius: 5px;
+}
+
+#pessoa5 {
+    background-image: url(/img/leticia.jpeg);
+    background-size: 250px 250px;
+    float:left;
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    border: 5px solid #fb6262;
+    border-radius: 5px;
+}
+
+#github {
+    background-color: #fb6262;
+    background-size: 250px 250px;
+    float:left;
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    border: 5px solid #fb6262;
+    border-radius: 5px;
+    color: #fff1d0;
+}
+
+/* Essa parte se refere a página de "bateria"*/
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #fff1d0;
+}
+
+.main-wrapper {
+	margin: 30px auto 0;
+	width: 1080px;
+	text-align: center;
+}
+
+.main-title {
+    margin-top: 100px;
+	text-align: center;
+	font-size: 3.2em;
+	color: #fb6262;
+	text-shadow: 1px 1px 1px #000;
+    margin-bottom: 150px;
+}
+
+.drum-kit-wrapper {
+	position: relative;
+	width: 600px;
+	margin: -100px auto 0;
+}
+
+.drum-kit {
+	width: 100%;
+	height: 520px;
+	position: relative;
+}
+
+.crash-cymbal {
+	position: absolute;
+	top: 114px;
+    left: 80px;
+    transform: rotate(-7.2deg) scale(1.5);
+    transition: all ease-in-out .042s;
+}
+
+.hihat-top-cymbal {
+	position: absolute;
+    top: 166px;
+    right: 71px;
+    transform: scale(1.35);
+    z-index: 0;
+    transition: all ease-in-out .042s;
+}
+
+.key {
+	display: inline-block;
+	transition: all ease-in-out .042s;
+	position: absolute;
+	background: #eaeaea;
+    font-size: 1.5em;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    border-radius: 4px;
+    border: 3px solid #aaa;
+    color: #444;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.65);
+    z-index: 2;
+}
+
+.key.kick {
+	top: 355px;
+    right: 250px;
+}
+
+.key.kick2 {
+    top: 355px;
+    right: 308px;
+}
+
+.key.snare {
+	right: 145px;
+    top: 280px;
+}
+
+.key.tom-high {
+	right: 227px;
+    top: 240px;
+}
+
+.key.tom-mid {
+	left: 222px;
+    top: 220px;
+}
+
+.key.tom-low {
+	top: 320px;
+    left: 133px;
+}
+
+.key.crash {
+	top: 80px;
+    left: 75px;
+}
+
+.key.ride {
+	left: 165px;
+    top: 87px;
+}
+
+.key.hihat-open {
+	right: 165px;
+    top: 144px;
+}
+
+.key.hihat-close {
+	right: 60px;
+    top: 150px;
+}
+
+.playing {
+	transform: scale(1.12);
+}
+
+.key-map-wrapper {
+	position: absolute;
+    right: 0;
+    top: 160px;
+    background: #dd1c1a;
+    width: 250px;
+    z-index: 3;
+    border-radius: 20px;
+}
+
+.key-map-wrapper > h2 {
+	color: #fff;
+	font-family: 'Righteous', sans-serif;
+	margin-bottom: 35px;
+	border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+    margin-top: 35px;
+}
+
+.key-map-list {
+	list-style: none;
+	color: #fff;
+	text-align: left;
+}
+
+.key-map-list > li {
+	margin-bottom: 25px;
+}
+
+.key-code {
+	color: #444;
+    background-color: #eaeaea;
+    font-size: 1.25em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 3px solid #aaa;
+}
+
+.key-sound {
+	font-size: 1.2em;
+	margin-left: 10px;
+	font-family: 'Righteous', sans-serif;
+	vertical-align: middle;
+}
+.lista{
+    display: inline-block;
+}
+
+.redessociais {
+
+    display: inline-block;
+    align-items: flex-end;
+}
+
+.card{
+    margin: 50px;
+    justify-content: center;
+}
+.professores {
+    padding-left: 50px
+}
